@@ -10,4 +10,16 @@ class PagesController extends Controller
        
         return view('pages.home');
     }
+    public function member(){
+       
+        return view('pages.member');
+    }
+    public function course(){
+       
+        return view('pages.course');
+    }
+    public function tact(){
+       
+        return view('pages.tact');
+    }
 }

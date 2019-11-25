@@ -15,3 +15,6 @@
 //});
 
 Route::get('/','PagesController@home');
+Route::get('/member','PagesController@member');
+Route::get('/course','PagesController@course');
+Route::get('/tact','PagesController@tact');
