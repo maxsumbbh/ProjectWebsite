@@ -3,19 +3,78 @@
 @section('content')
  
 
-<div class="header">
-  {{-- //code ใส่รูป --}}
-  <img src="<?php echo asset('assets/img/2.png'); ?>" width="100%" height="200px">
-  {{-- //code ใส่รูป   --}}
-</div>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">เทคโนโลยีสารสนเทศ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/" class="active">หน้าแรก
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="member">บุคลากร</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="course">หลักสูตร</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bua.rmutr.ac.th/" target="_blank">หน่วยงานอื่น</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tact">ติดต่อเรา</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<div class="navbar">
-  <a href="#" class="active">หน้าแรก</a>
-  <a href="member">บุคลากร</a>
-  <a href="#">หลักสูตร</a>
-  <a href="https://bua.rmutr.ac.th/" target="_blank">หน่วยงานอื่น</a>
-  <a href="tact" >ติดต่อเรา</a>
-</div>
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('assets/img/2.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">First Slide</h2>
+          <p class="lead">This is a description for the first slide.</p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Second Slide</h2>
+          <p class="lead">This is a description for the second slide.</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</header>
+
 <div class="content">
   <div class="row">
     <div class="leftcolumn">
@@ -53,9 +112,163 @@
     </div>
   </div>
 </div>
+<header class=" py-5 mb-4">
+  <div class="container">
+    <h1 class="font-weight-light text-white">Text</h1>
+  </div>
+</header>
 
-<div class="footer">
-  <h2>Footer</h2>
+<!-- Page Content -->
+<div class="container">
+
+  
+
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/1000x1000" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project One</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Two</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Three</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Four</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Five</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">Project Six</a>
+          </h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  
 </div>
+<!-- /.container -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6">
+        <h3>Site Map</h3>
+        <ul class="list-unstyled three-column">
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Code</li>
+          <li>Design</li>
+          <li>Host</li>
+          <li>Contact</li>
+          <li>Company</li>
+        </ul>
+        <ul class="list-unstyled socila-list">
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+          <li><img src="http://placehold.it/48x48" alt="" /></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <h3>ติดต่อเรา</h3>
+        <div class="media">
+          <a href="#" class="pull-left">
+            <img src="<?php echo asset('assets/img/tle.png'); ?>" width="64px" height="64px" alt="" class="media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">โทรศัพท์</h4>
+            <p>02-222-2814 ต่อ 5350 5330</p>
+          </div>
+        </div>
+        
+        <div class="media">
+          <a href="#" class="pull-left">
+            <img src="http://placehold.it/64x64" alt="" class="media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Coding</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        
+        <div class="media">
+          <a href="#" class="pull-left">
+            <img src="http://placehold.it/64x64" alt="" class="media-object" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Web Sesign</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-lg-4">
+        <h3>ช่องทางการติดต่อ</h3>
+        <img class="img-thumbnail" src="http://placehold.it/400x200" alt="" />
+        
+      </div>
+      
+    </div>
+  </div>
+  <div class="copyright text-center">
+    Copyright &copy; 2017 <span>Your Template Name</span>
+  </div>
+</footer>
+
 
 @endsection
