@@ -1,9 +1,8 @@
 * {
   box-sizing: border-box;
 }
-header{
-  background: blue;
-  text-align: center;
+img {
+  border-radius: 8px;
 }
 
 .content {
@@ -16,24 +15,57 @@ header{
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: white;
+  background-color:#eeeeee;
 }
 .carousel-item {
-  height: 30vh;
-  min-height: 350px;
+  height: 40vh;
+  min-height: 450px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
-
-}
-nav{
-  background-color: #0894d1;
   
+
 }
 
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color:#ffebcd;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
 
 
 .leftcolumn {   
@@ -50,16 +82,16 @@ nav{
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  
   width: 100%;
   padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-   background-color: white;
+   background-color:#eeeeee;
    padding: 20px;
-   margin-top: 20px;
+   margin-top: 10px;
 }
 
 /* Clear floats after the columns */
@@ -78,68 +110,65 @@ nav{
   }
 }
 
-footer {
-  background: #222;
-  color: #aaa;
-  padding-top: 10px;
-}
 
-footer a {
-  color: #aaa;
-}
 
-footer a:hover {
-  color: #fff;
-}
 
-footer h3 {
- color: #0894d1;
-  letter-spacing: 1px;
-  margin: 30px 0 20px;
-}
-
-footer .three-column {
- overflow: hidden;
-}
-
-footer .three-column li{
- width: 33.3333%;
-  float: left;
-  padding: 5px 0;
-}
-
-footer .socila-list {
-  overflow: hidden;
-  margin: 20px 0 10px;
-}
-
-footer .socila-list li {
-  float: left;
-  margin-right: 3px;
-  opacity: 0.7;
-  overflow: hidden;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-}
-
-footer .socila-list li:hover {
-  opacity: 1;
-}
-
-footer .img-thumbnail {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #444;
-  margin-bottom: 5px;
-}
-
-footer .copyright {
-  padding: 15px 0;
-  background: #333;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-footer .copyright span {
+h2{
   color: #0894d1;
 }
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color:black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.31%;
+}
 
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #eeeeee;}
+#News {background-color: #eeeeee;}
+#Contact {background-color: #eeeeee;}
+.footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}

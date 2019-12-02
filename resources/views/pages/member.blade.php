@@ -77,114 +77,63 @@
   </div>
 </header>
 <div class="content">
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
+<!-- Header -->
+<header class="bg-primary text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="font-weight-light text-white">Meet the Team</h1>
     </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>About Me</h2>
-        <div class="fakeimg" style="height:100px;">Image</div>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div>
-      </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer>
+  </header>
+  
+  <!-- Page Content -->
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4 col-md-6">
-        <h3>Site Map</h3>
-        <ul class="list-unstyled three-column">
-          <li>Home</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Code</li>
-          <li>Design</li>
-          <li>Host</li>
-          <li>Contact</li>
-          <li>Company</li>
-        </ul>
-        <ul class="list-unstyled socila-list">
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-        </ul>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <h3>ติดต่อเรา</h3>
-        <div class="media">
-          <a href="#" class="pull-left">
-            <img src="<?php echo asset('assets/img/tle.png'); ?>" width="64px" height="64px" alt="" class="media-object" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">โทรศัพท์</h4>
-            <p>02-222-2814 ต่อ 5350 5330</p>
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
           </div>
         </div>
-        
-        <div class="media">
-          <a href="#" class="pull-left">
-            <img src="http://placehold.it/64x64" alt="" class="media-object" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Coding</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/9UVmlIb0wJU/500x350" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
           </div>
         </div>
-        
-        <div class="media">
-          <a href="#" class="pull-left">
-            <img src="http://placehold.it/64x64" alt="" class="media-object" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Web Sesign</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/sNut2MqSmds/500x350" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
           </div>
         </div>
-        
       </div>
-      
-      <div class="col-lg-4">
-        <h3>ช่องทางการติดต่อ</h3>
-        <img class="img-thumbnail" src="http://placehold.it/400x200" alt="" />
-        
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="https://source.unsplash.com/ZI6p3i9SbVU/500x350" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Team Member</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
       </div>
-      
     </div>
+    <!-- /.row -->
+  
   </div>
-  <div class="copyright text-center">
-    Copyright &copy; 2017 <span>Your Template Name</span>
-  </div>
-</footer>
+  <!-- /.container -->
+</div>
+
+
 
 @endsection

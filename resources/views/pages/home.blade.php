@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
- 
+
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">เทคโนโลยีสารสนเทศ</a>
+    <a class="navbar-brand" href="/">เทคโนโลยีสารสนเทศ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,22 +45,19 @@
       <!-- Slide One - Set the background image for this slide in the line below -->
       <div class="carousel-item active" style="background-image: url('assets/img/2.png')">
         <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">First Slide</h2>
-          <p class="lead">This is a description for the first slide.</p>
+        
         </div>
       </div>
       <!-- Slide Two - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
         <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
+      
         </div>
       </div>
       <!-- Slide Three - Set the background image for this slide in the line below -->
       <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
         <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Third Slide</h2>
-          <p class="lead">This is a description for the third slide.</p>
+
         </div>
       </div>
     </div>
@@ -79,18 +76,74 @@
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
+        <h2>News Update</h2>
+        <div class="fakeimg" style="height:100%;"></div>
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('assets/img/10.jpg')">
+                  <div class="carousel-caption d-none d-md-block">
+                  
+                  </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+                
+                  </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+                  <div class="carousel-caption d-none d-md-block">
+          
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+          </header>
+       
         <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div>
+                  <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/51.jpg'); ?>" width="100%" height="100%" alt=""></a>  
+                  <p class="card-text">เทคโนโลยีสารสนเทศ</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div>
+                  <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/52.jpg'); ?>" width="100%" height="100%" alt=""></a>   
+                  <p class="card-text">เทคโนโลยีสารสนเทศ</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+              <div>
+                  <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/53.jpg'); ?>" width="100%" height="100%" alt=""></a>              
+                  <p class="card-text">เทคโนโลยีสารสนเทศ</p>
+              </div>
+            </div>
       </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      
+     
+        
+    
+    
+    <!-- /.row -->
+  
       </div>
     </div>
     <div class="rightcolumn">
@@ -100,175 +153,157 @@
         <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
       </div>
       <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div><br>
+        <h2>Popular Post</h2>
+        <div class="fakeimg">
+            <img src="<?php echo asset('assets/img/2.png'); ?>" width="100%" height="100%" alt=""/>
+          
+        </div><br>
+        
         <div class="fakeimg">Image</div><br>
         <div class="fakeimg">Image</div>
       </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
+     
     </div>
   </div>
-</div>
-<header class=" py-5 mb-4">
-  <div class="container">
-    <h1 class="font-weight-light text-white">Text</h1>
-  </div>
-</header>
+  <br>
+  <br>
 
-<!-- Page Content -->
-<div class="container">
+  <button class="tablink" onclick="openPage('Home', this, '#ffffff')"id="defaultOpen"><img src="<?php echo asset('assets/img/11.png'); ?>" width="50px" height="50px" alt="" class="media-object" /><br>
+    สหกิจ</button>
+<button class="tablink" onclick="openPage('News', this, '#ffffff')" ><img src="<?php echo asset('assets/img/12.gif'); ?>" width="50px" height="50px" alt="" class="media-object" /><br>
+  กิจกรรม</button>
 
-  
+<button class="tablink" onclick="openPage('Contact', this, '#ffffff')"><img src="<?php echo asset('assets/img/13.png'); ?>" width="50px" height="50px" alt="" class="media-object" /><br>
+  ผลงาน</button>
+<br>
+<br>
 
-  <div class="row">
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/1000x1000" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project One</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Two</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Three</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Four</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Five</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-      <div class="card h-100">
-        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-        <div class="card-body">
-          <h4 class="card-title">
-            <a href="#">Project Six</a>
-          </h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam aperiam nulla perferendis dolor nobis numquam, rem expedita, aliquid optio, alias illum eaque. Non magni, voluptates quae, necessitatibus unde temporibus.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.row -->
 
-  
-</div>
-<!-- /.container -->
-
-<footer>
-  <div class="container">
+<div id="Home" class="tabcontent">
     <div class="row">
-      
-      <div class="col-lg-4 col-md-6">
-        <h3>Site Map</h3>
-        <ul class="list-unstyled three-column">
-          <li>Home</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Code</li>
-          <li>Design</li>
-          <li>Host</li>
-          <li>Contact</li>
-          <li>Company</li>
-        </ul>
-        <ul class="list-unstyled socila-list">
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-          <li><img src="http://placehold.it/48x48" alt="" /></li>
-        </ul>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <h3>ติดต่อเรา</h3>
-        <div class="media">
-          <a href="#" class="pull-left">
-            <img src="<?php echo asset('assets/img/tle.png'); ?>" width="64px" height="64px" alt="" class="media-object" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">โทรศัพท์</h4>
-            <p>02-222-2814 ต่อ 5350 5330</p>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+            <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/1.jpg'); ?>" width="100%" height="100%" alt=""></a>  
+            
+              <p class="card-text">เทคโนโลยีสารสนเทศ</p>
           </div>
         </div>
-        
-        <div class="media">
-          <a href="#" class="pull-left">
-            <img src="http://placehold.it/64x64" alt="" class="media-object" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Coding</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+              <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/2.jpg'); ?>" width="100%" height="100%" alt=""></a>   
+              <p class="card-text">เทคโนโลยีสารสนเทศ</p>
           </div>
         </div>
-        
-        <div class="media">
-          <a href="#" class="pull-left">
-            <img src="http://placehold.it/64x64" alt="" class="media-object" />
-          </a>
-          <div class="media-body">
-            <h4 class="media-heading">Web Sesign</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+              <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/3.jpg'); ?>" width="100%" height="100%" alt=""></a>            
+              <p class="card-text">เทคโนโลยีสารสนเทศ</p>
           </div>
         </div>
-        
-      </div>
-      
-      <div class="col-lg-4">
-        <h3>ช่องทางการติดต่อ</h3>
-        <img class="img-thumbnail" src="http://placehold.it/400x200" alt="" />
-        
-      </div>
-      
-    </div>
   </div>
-  <div class="copyright text-center">
-    Copyright &copy; 2017 <span>Your Template Name</span>
-  </div>
-</footer>
+</div>
 
+<div id="News" class="tabcontent">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+              <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/20.jpg'); ?>" width="100%" height="100%" alt=""></a>  
+              <p class="card-text">เฟรชชี่เดย์ ปี2562</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+              <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/21.jpg'); ?>" width="100%" height="100%" alt=""></a>  
+              <p class="card-text">กีฬาสี ปี2562</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+              <a href="#"><img class="card-img-top" src="<?php echo asset('assets/img/23.jpg'); ?>" width="100%" height="100%" alt=""></a>          
+              <p class="card-text">พิธีไหว้ครู ปี2562</p>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+            <a href="#"><img class="card-img-top" src="http://placehold.it/700x600" alt=""></a>  
+              <p class="card-text">เทคโนโลยีสารสนเทศ</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+            <a href="#"><img class="card-img-top" src="http://placehold.it/700x600" alt=""></a>    
+              <p class="card-text">เทคโนโลยีสารสนเทศ</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div>
+            <a href="#"><img class="card-img-top" src="http://placehold.it/700x600" alt=""></a>               
+              <p class="card-text">เทคโนโลยีสารสนเทศ</p>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</div>
+
+<div class="mt-5 pt-5 pb-5 footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 about-company">
+          <h2>Heading</h2>
+          <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+          <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+        </div>
+        <div class="col-lg-3 col-xs-12 links">
+          <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+            <ul class="m-0 p-0">
+              <li>- <a href="#">Lorem ipsum</a></li>
+              <li>- <a href="#">Nam mauris velit</a></li>
+              <li>- <a href="#">Etiam vitae mauris</a></li>
+              <li>- <a href="#">Fusce scelerisque</a></li>
+              <li>- <a href="#">Sed faucibus</a></li>
+              <li>- <a href="#">Mauris efficitur nulla</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-xs-12 location">
+          <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+          <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+          <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+          <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col copyright">
+          <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+    </div>
 
 @endsection
