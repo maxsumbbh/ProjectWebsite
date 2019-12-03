@@ -22,5 +22,8 @@ class PagesController extends Controller
        
         return view('pages.tact');
     }
-  
+    public function test(){
+       
+        return view('pages.test');
+    }
 }

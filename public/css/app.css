@@ -1,9 +1,7 @@
 * {
   box-sizing: border-box;
 }
-img {
-  border-radius: 8px;
-}
+
 
 .content {
   max-width: 1150px;
@@ -29,24 +27,10 @@ body {
   
 
 }
-
-/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
-.navbar {
-  overflow: hidden;
-  background-color:#ffebcd;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+#logo-main {
+    display: block;
+    margin: 20px auto;
+  }
 }
 
 
@@ -55,18 +39,151 @@ body {
   float: right;
 }
 
-/* Change color on hover */
-.navbar a:hover {
+
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase
+}
+
+.navbar .nav {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+
+.navbar-inverse {
+  background-color: #003300
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  background-color: #002200
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  background-color: #003300
+}
+
+.dropdown-menu {
+  background-color: #006B00
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #003300;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  min-width: 200px;
+}
+
+.dropdown-content a:hover {
+  background-color: #002200;
+  color:#FFCC00 ;
   
-  color: black;
 }
 
-/* Active/current link */
-.navbar a.active {
-  background-color: #666;
-  color: white;
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-color: #002200
 }
 
+.navbar-inverse {
+  background-image: none;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background-image: none;
+}
+
+.navbar-inverse {
+  border-color: #003300
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #FFFFFF
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+  color: #FFCC00
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+  color: #FFCC00
+  
+}
+
+.dropdown-menu>li>a {
+  color: #003300
+  
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  color: #FFCC00
+  
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+  border-top-color: #003300
+  
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+  border-top-color: #003300
+  
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a .caret {
+  border-bottom-color: #003300
+}
+
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
+  border-bottom-color: #003300
+}
 
 .leftcolumn {   
   float: left;
@@ -144,31 +261,70 @@ h2{
 #Home {background-color: #eeeeee;}
 #News {background-color: #eeeeee;}
 #Contact {background-color: #eeeeee;}
-.footer{
-  background: #152F4F;
-  color:white;
-  
-  .links{
-    ul {list-style-type: none;}
-    li a{
-      color: white;
-      transition: color .2s;
-      &:hover{
-        text-decoration:none;
-        color:#4180CB;
-        }
-    }
-  }  
-  .about-company{
-    i{font-size: 25px;}
-    a{
-      color:white;
-      transition: color .2s;
-      &:hover{color:#4180CB}
-    }
-  } 
-  .location{
-    i{font-size: 18px;}
+
+ 
+  footer {
+    background: #002200;
+    color: white;
+    padding-top: 10px;
+    font-size: 14px;
   }
-  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
-}
+  
+  footer a {
+    color: #aaa;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  footer h3 {
+   color: #0894d1;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+  }
+  
+  footer .three-column {
+   overflow: hidden;
+  }
+  
+  footer .three-column li{
+   width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+  }
+  
+  footer .socila-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+  }
+  
+  footer .socila-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.7;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer .socila-list li:hover {
+    opacity: 1;
+  }
+  
+  footer .img-thumbnail {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+    margin-bottom: 5px;
+  }
+  
+  footer .copyright {
+    padding: 15px 0;
+    background: #003300;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  footer .copyright span {
+    color: #949494;
+  }
