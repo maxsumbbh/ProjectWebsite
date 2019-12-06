@@ -6,7 +6,7 @@
 .content {
   max-width: 1150px;
   margin: auto;
-  background: #eeeeee;
+  background: #f0bc95;
   padding: 30px;
 }
 /* Style the body */
@@ -14,6 +14,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color:#eeeeee;
+  
 }
 .carousel-item {
   height: 40vh;
@@ -29,9 +30,9 @@ body {
 }
 #logo-main {
     display: block;
-    margin: 20px auto;
+   
   }
-}
+
 
 
 /* Right-aligned link */
@@ -187,13 +188,20 @@ body {
 
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 71%;
+  
+  
+}
+.left{
+  float: left;
+  width: 100%;
+  
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 29%;
   padding-left: 20px;
 }
 
@@ -201,14 +209,17 @@ body {
 .fakeimg {
   
   width: 100%;
-  padding: 20px;
+
+ 
+
 }
 
 /* Add a card effect for articles */
 .card {
    background-color:#eeeeee;
-   padding: 20px;
-   margin-top: 10px;
+   padding: 15px;
+   margin-top: 5px;
+   
 }
 
 /* Clear floats after the columns */
@@ -233,42 +244,13 @@ body {
 h2{
   color: #0894d1;
 }
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color:black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 33.31%;
-}
 
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: black;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
-
-#Home {background-color: #eeeeee;}
-#News {background-color: #eeeeee;}
-#Contact {background-color: #eeeeee;}
-
- 
-  footer {
+footer {
     background: #002200;
     color: white;
     padding-top: 10px;
     font-size: 14px;
-  }
+}
   
   footer a {
     color: #aaa;
@@ -328,3 +310,109 @@ h2{
   footer .copyright span {
     color: #949494;
   }
+  .description {
+    padding-left: 15px;
+    border-left: 2px solid #000;
+ }
+  .description h3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0px;
+    color: #000;
+    text-transform: uppercase;
+ }
+  .description p {
+    margin-top: 10px;
+    font-weight: 300;
+ }
+  .wrapper {
+    margin: 50px;
+ }
+  ul.breadcrumbs {
+    margin: 25px 0px 0px;
+    padding: 0px;
+    font-size: 0px;
+    line-height: 0px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    height: 40px;
+ }
+  ul.breadcrumbs li {
+    position: relative;
+    margin: 0px 0px;
+    padding: 0px;
+    list-style: none;
+    list-style-image: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    border-left: 1px solid #ccc;
+    transition: 0.3s ease;
+ }
+  ul.breadcrumbs li:hover:before {
+    border-left: 10px solid #96be11;
+ }
+  ul.breadcrumbs li:hover a {
+    color: #000;
+    background: #96be11;
+ }
+  ul.breadcrumbs li:before {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: -1px;
+    z-index: 20;
+    border-left: 10px solid #fff;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    transition: 0.3s ease;
+ }
+  ul.breadcrumbs li:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -1px;
+    z-index: 10;
+    border-left: 10px solid #ccc;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+ }
+  ul.breadcrumbs li.active a {
+    color: #000;
+    background: #96be11;
+ }
+  ul.breadcrumbs li.first {
+    border-left: none;
+ }
+  ul.breadcrumbs li.first a {
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 5px 0px 0px 5px;
+ }
+  ul.breadcrumbs li.last:before {
+    display: none;
+ }
+  ul.breadcrumbs li.last:after {
+    display: none;
+ }
+  ul.breadcrumbs li.last a {
+    padding-right: 20px;
+    border-radius: 0px 40px 40px 0px;
+ }
+  ul.breadcrumbs li a {
+    display: block;
+    font-size: 12px;
+    line-height: 40px;
+    color: #757575;
+    padding: 0px 15px 0px 25px;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s ease;
+ }

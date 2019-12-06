@@ -3,8 +3,8 @@
 @section('content')
 
 <div>
-<img id="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo">
-</div>
+  <img id="logo-main" src="<?php echo asset('assets/img/logos.png'); ?>" width="100%" height="100%" alt=""/>
+    </div>
 <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav navbar-expand-lg" role="banner">
         <div class="container">
           <div class="navbar-header">
@@ -25,8 +25,8 @@
                 <a class="nav-link" href="#" class="dropdown-toggle" data-toggle="dropdown">หน่วยงานอื่น <b class="caret"></b></a>
                 <ul class="dropdown-content ">
                     <li><a class="nav-link" href="https://bua.rmutr.ac.th/" target="blank">คณะบริหารธุรกิจ</a></li>
-                  <li><a class="nav-link" href="#">Vision</a></li>
-                  <li><a class="nav-link" href="#">Careers</a></li>
+                    <li><a class="nav-link" href="https://www.rmutr.ac.th/">มทร.รัตนโกสินทร์</a></li>
+                    <li><a class="nav-link" href="https://reg.rmutr.ac.th/registrar/home.asp">งานทะเบียน</a></li>
                 </ul>
               </li>
               <li>
@@ -36,6 +36,15 @@
           </nav>
         </div>
       </header>
+      <div class="wrapper">
+        <ul class="breadcrumbs">
+          <li class="first"><a href="#" class="icon-home"></a></li>
+          <li><a href="#">First Level Interior Page</a></li>
+          <li><a href="#">Second Level Interior Page</a></li>
+          <li><a href="#">Third Level Interior Page</li>
+          <li class="last active"><a href="#">บุคลากร</a></li>
+        </ul>
+      </div>
 <div class="content">
 <!-- Header -->
 <header class="bg-primary text-center py-5 mb-4">
@@ -232,5 +241,31 @@
       Copyright &copy; 2017 <span>Your Template Name</span>
     </div>
   </footer>
+
+  <script>
+    $('.breadcrumbs li a').each(function(){
+
+var breadWidth = $(this).width();
+
+if($(this).parent('li').hasClass('active') || $(this).parent('li').hasClass('first')){
+
+
+
+} else {
+
+    $(this).css('width', 75 + 'px');
+
+    $(this).mouseover(function(){
+        $(this).css('width', breadWidth + 'px');
+    });
+
+    $(this).mouseout(function(){
+        $(this).css('width', 75 + 'px');
+    });
+}
+
+    
+});
+    </script>
 
 @endsection
